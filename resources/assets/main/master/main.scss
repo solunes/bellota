@@ -1,0 +1,15 @@
+/* Global Texts */
+label { font-size: 15px !important; color: $primary-color; }
+h1 { font-family: $font-title; font-weight: 700; text-align: center; margin-bottom: 0px; }
+h2, h3, h4, h5, h6 { font-family: $font-title; font-weight: 700; margin-top: 20px; }
+a { color: $primary-color; }
+a:hover { color: $third-color; }
+
+/* Content Page */
+.content-page { font-size: 17px; line-height: 28px; padding-top: 40px; padding-bottom: 30px; }
+.content-segment { color: $text-color; }
+.content-wrap.main-menu { background: $primary-color; }
+.content-wrap-2 { position: relative; min-height: 600px; 
+    h3 { margin-top: 0; padding-top: 10px; margin-bottom: 25px; color: $primary-color; }
+    .content-segment { padding-bottom: 20px; }
+}

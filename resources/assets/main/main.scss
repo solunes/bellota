@@ -1,0 +1,34 @@
+@import "compass/css3";
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Lobster+Two:400,400i,700,700i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,800,900');
+
+// General Variables
+$font-title: 'Abel', Helvetica;
+$font-subtext: 'Source Sans Pro', sans-serif;
+$font-text: 'Source Sans Pro', sans-serif;
+$primary-color: #136957;
+$second-color: #2a917b;
+$third-color: #000000;
+$background-color: #fff;
+$text-color: #555555;
+
+$admin-main-color: #136957;
+$admin-second-color: #2a917b;
+$admin-light-color: #ffffff;
+
+@import "global/mixins";
+@import "global/main";
+@import "global/admin";
+
+//body.main-site { color: $second-color; font-family: $font-text; font-size: 20px; background: $background-color; }
+
+body.main-site {
+	/*@import "master/main";
+	@import "master/responsive";
+	@import "segments/main";
+	@import "segments/responsive";
+	@import "project/main";
+	@import "project/responsive";*/
+
+}

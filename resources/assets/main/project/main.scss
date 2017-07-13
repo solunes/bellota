@@ -1,0 +1,39 @@
+/* Home Menu */
+.tz-headerHome { background: rgba(255, 255, 255, 0.8); }
+.tzHeaderContainer h3 { padding: 10px; }
+.tz-headerHome ul li a { color: $primary-color; padding: 50px 0; }
+.tz-headerHome ul li a:before { background: $primary-color; }
+
+/* Top Banner */
+.top-banner { background: url('../../../assets/img/banner2.jpg') center 90% no-repeat; background-size: cover; background-attachment: fixed; position: relative;
+    h1 { padding-top: 220px; padding-bottom: 120px; color: #fff; font-size: 60px; font-weight: bold; line-height: 1em; text-shadow: 4px 0 4px #7dc243, -4px 0 4px #7dc243, 0 4px 4px #7dc243, 0 -4px 4px #7dc243; }
+}
+
+/* Home */
+.tz_home_slider_meetup .tz_slider_meetup_btn {
+    a.tz_slider_meetup_btn_1 { background: $primary-color; border-color: $primary-color; font-size: 14px; line-height: 20px; }
+    a.tz_slider_meetup_btn_1:hover { background: $second-color; border-color: $second-color; }
+    a.tz_slider_meetup_btn_1.tz_slider_meetup_btn_2 { background: transparent; border-color: #ffffff; }
+    .tz_slider_meetup_btn_1.tz_slider_meetup_btn_2:hover { border-color: $second-color; color: $second-color; }
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .tz_meetup_countdown .tz_meetup_countdown_time:after { background: $second-color; }
+.bx-wrapper .bx-pager.bx-default-pager a { border-color: $second-color; }
+.bx-wrapper .bx-controls-direction a:hover { color: $second-color; }
+.meetup_bl_slider_home { background: rgba(0,0,0,0.4); }
+.tz_event_meetup_content .tz_meetup_box_detail:before { background: $primary-color; }
+.tz_meetup_btn a.tz_meetup_bnt_orange_bk { background: $primary-color; border-color: $primary-color; }
+
+/* Singles */
+.single-article {
+    img { float: left; width: 500px; margin-right: 20px; margin-bottom: 10px; }
+}
+.single-member {
+    h2 { margin-bottom: 20px; }
+    h4 { color: #777; }
+    .col-sm-8 { border-left: 1px dashed #eee; }
+}
+
+/* Member */
+h2.member-title { font-size: 32px;
+    img { width: 60px; height: 60px; margin-right: 10px; }
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    .tz-headerHome .navbar-toggle { background: $primary-color; }
+    .tz-homeType2.tz-homeTypeRelative nav ul.tz-nav > li:hover > a, .tz-homeType1.tz-homeTypeFixed nav ul.tz-nav > li:hover > a { border-color: $primary-color; }
+    .tz-headerHome nav.tz-menu li a:hover, .tz-headerHome nav > ul > li:hover, .tz-homeType2.tz-homeTypeRelative nav ul.tz-nav > li:hover > a, .tz-homeType1.tz-homeTypeFixed nav ul.tz-nav > li:hover > a {  background: $primary-color; color: #fff; }
+    .top-banner h1 { padding-top: 120px; }
+}
+
+@media screen and ( min-width: 768px) and ( max-width: 991px ) {
+
+}
+
+@media screen and ( min-width: 992px) and ( max-width: 1199px ) {  
+
+}
+
+@media screen and ( min-width: 1200px) {
+
+}
+
+@media screen and ( max-width: 1440px) {
+    .tz_meetup_countdown { margin-top: 5px; }
+}

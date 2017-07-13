@@ -1,0 +1,118 @@
+.content-registry-a, .content-registry-b, .content-postulation-a, .content-postulation-b {
+    #field_registry_a_id, #field_registry_b_id { display: none; }
+    .help { padding-left: 10px; }
+}
+
+.content-publication, .content-article {
+    .col-sm-4 { margin-bottom: 20px;
+        .new_img { z-index: 9998; overflow: hidden; }
+        .box-info { padding: 10px; }
+        p { margin: 0; padding: 0; text-align: center; }
+        p.subtitle { font-size: 20px; line-height: 24px; padding-bottom: 10px; }
+        p.subtext { font-family: $font-subtext; font-size: 20px; line-height: 24px; }
+    }
+    .col-sm-4:hover {
+        .new_img {
+            img { @include transition(all 0.7s ease); opacity: 0.6; }
+        }
+        .box-info { padding: 10px; }
+    }
+}
+
+.content-member { margin-bottom: 30px;
+    h1 { color: $primary-color; margin-top: 50px; }
+    .col-sm-4 { padding-left: 0; padding-right: 0; }
+    .member { position: relative; margin: 10px; height: 188px; z-index: 1; perspective: 1000;
+        .card { width: 100%; height: 100%; transform-style: preserve-3d; @include transition(all 1s ease); 
+            .face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border: 3px solid #ddd; @include box-shadow(rgba(0, 0, 0, 0.4) -2px 3px 10px); }
+            .face.front img { width: 100%; margin: auto; }
+            .face.back { display: block; transform: rotateY(180deg); box-sizing: border-box; padding: 10px; color: white; text-align: center; background-color: $primary-color; height: 100%;
+                h3 { color: #fff; margin-top: 10px; margin-bottom: 10px; text-align: center; }
+                p { color: #fff;; text-align: center; font-size: 13px; line-height: 20px; }
+                p.link { color: #fff; font-size: 18px; line-height: 24px; }
+            }
+        }
+    }
+    .member:hover .card { transform: rotateY(180deg); }
+}
+
+.content-file {
+    .row { margin-bottom: 5px; @include box-shadow(#777777 0px 3px 8px); }
+    .file {
+        .date { border-right: 5px solid #000; text-align: center; background: #086B1F; color: #fff; min-height: 80px;
+            h4 { margin-top: 0px; }
+            span { font-size: 30px; text-align: center; }
+        }
+        .name { min-height: 80px; background-color: #F9F9F9;
+            h3 { margin-left: 8px; }
+        }
+        .button { background: #085119; padding: 15px; text-align: center; min-height: 80px;
+            i { color: #fff; font-size: 35px; margin-top: 6px; }
+        }
+    }
+    .row:hover {
+        .date { background: #FCE01B; color: $primary-color; @include transition(all 1s ease);
+            span { font-weight: 600; }
+        }
+        .button { background: #E8CE15; @include transition(all 1s ease);
+            i { color: #000; }
+         }
+    }
+}
+
+.content-segment.content-project { padding-top: 0;
+    #owl-projects { position: relative;
+        .owl-item img { width: 60px; height: 60px; display: inline-block; margin-right: 10px; }
+        .owl-prev, .owl-next { position: absolute; top: 58px; font-size: 50px; color: $primary-color; }
+        .owl-prev { left: 5px; }
+        .owl-next { right: 5px; }
+        .item { padding: 0 30px; }
+        h3 { margin: 0; }
+    }
+}
+
+.content-comunicate {
+    .col-sm-4 { margin-bottom: 30px; }
+    .comunicate { width: 100%; position: relative; overflow: hidden; margin: 10px; display: inline-block; animation: anima 2s; -webkit-animation: anima 2s; -moz-animation: anima 2s; backface-visibility: hidden; -webkit-backface-visibility: hidden; @include box-shadow(#aaa 0px 0px 5px); border: 5px solid #fff;
+        .comunicate_content { width: 100%; background-color: rgba(8, 81, 25, 0.7); padding: 5px; border-top: 3px solid rgba(239, 239, 0, 0.81); cursor: default; position: absolute; text-align: center; }
+        .bottom-to-top { top: 76%; left: 0; height: 30%; @include transition(all 0.5s ease); }
+        h3 { margin-top: 15px; margin-bottom: 10px; color: #FCE01B; }
+        p { margin-top: 15px; color: #fff; }
+    }
+    .comunicate:hover {
+        .comunicate_content { @include transition(all 0.5s ease); }
+        img { @include transition(all 0.5s ease); }
+        .bottom-to-top { top: 0; height: 100%; opacity: 1; }
+    }
+}
+
+.content-video {
+    a .gallery_view { border: 5px solid #fff; overflow: hidden; position: relative; text-align: center; @include box-shadow(#aaa 0px 0px 5px);
+        img { display: block; position: relative; }
+        .mask { width: 100%; height: 100%; position: absolute; overflow: hidden; top: 0; left: 0; opacity: 0; overflow:visible; border:0px solid rgba(0,0,0,0.7); box-sizing:border-box; transition: all 0.4s ease-in-out; }
+        h3.info { position:relative; display: inline-block; padding:0; top: -60px; opacity:0; transform:scale(0,0); transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out; color: #fff; }
+    }
+    a:hover .gallery_view {
+        .mask { opacity: 1; border: 132px solid $primary-color; opacity: 0.65; }
+        h3.info { opacity: 1; transform:scale(1,1); transition-delay:0.3s; }
+    }
+}
+
+.content-job {
+    .job { border: 3px solid $second-color; padding: 10px;
+        i { font-size: 20px; color: $second-color; width: 100%; }
+        .content { margin-top: 10px; margin-bottom: 10px; }
+    }
+}
+
+.content-photo { background: url("../../../assets/img/photo_bg.jpg") center center; background-size: cover; background-attachment: fixed; border-top: 5px solid #fff;
+    a .gallery_view { border: 5px solid #fff; overflow: hidden; position: relative; text-align: center; @include box-shadow(#aaa 0px 0px 5px); @include transition(all 0.5s ease);
+        img { display: block; position: relative; }
+        .mask { width: 100%; height: 100%; position: absolute; overflow: hidden; top: 0; left: 0; opacity: 0; overflow:visible; border:0px solid rgba(0,0,0,0.7); box-sizing:border-box; transition: all 0.4s ease-in-out; }
+        i { position:relative; display: inline-block; padding:0; top: -60px; opacity:0; transform:scale(0,0); transition: transform 0.2s 0.1s ease-in, opacity 0.1s ease-in-out; color: #fff; font-size: 100px; }
+    }
+    a:hover .gallery_view { @include transform(rotate(-10deg));
+        .mask { opacity: 1; border: 132px solid $primary-color; opacity: 0.65; }
+        i { opacity: 1; transform:scale(1,1); transition-delay:0.3s; }
+    }
+}

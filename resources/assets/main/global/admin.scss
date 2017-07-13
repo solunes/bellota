@@ -1,0 +1,26 @@
+body.admin-site {
+	/* Main */
+	label { color: $admin-main-color; }
+	a { color: $admin-main-color; }
+	a:hover { color: $admin-second-color; }
+
+	/* Admin */
+	.page-sidebar .page-sidebar-menu>li.active.open>a, .page-sidebar .page-sidebar-menu>li.active>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a, .page-header.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle .badge.badge-default { background: $admin-main-color; }
+	.content-wrap.pdf-wrap h1, h2, h3, h4, h5, h6 { font-family: $font-text; }
+	.tooltip-custom, #map-canvas a.active .btn, .progress_bar .bar, .btn-site { background: $admin-main-color; }
+	#map-canvas .btn:hover { border-color: $admin-main-color; color: $admin-main-color; }
+	.btn-site { color: #fff; }
+	.btn-site:hover { background: $admin-second-color; }
+	.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus { background: $admin-main-color; border-color: $admin-main-color; }
+
+	/* Admin Editor */
+	.flex-item {
+		.form_fields_actions { display: none; background: #f3f3f3; border: 1px dashed #ccc; padding: 10px; color: #777; }
+	}
+	.flex-item:hover .form_fields_actions { display: block; }
+}
+body.error-site { background: $admin-main-color; color: $admin-light-color;
+	.top { background: $admin-light-color; color: $admin-main-color; }
+	.button { background: $admin-light-color; color: $admin-main-color; }
+    a:hover .button { background: $admin-light-color; }
+}

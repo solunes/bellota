@@ -1,0 +1,172 @@
+/******************************************
+    File Name: responsive.css
+    Template Name: HomeStyle
+    Created By: Show WP Team
+    Envato Profile: http://themeforest.net/user/wordpressshowcase
+    Website: https://showwp.com
+    Version: 1.0
+    Support: wordpressshowcasecom@gmail.com
+/******************************************/
+
+@media (min-width: 992px) {
+    .yamm-fw {
+        position: relative;
+    }
+    .hasmenu:hover > ul,
+    .yamm-fw:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+    }
+    .navbar-nav .hasmenu ul,
+    .navbar-nav .yamm-fw ul {
+        -webkit-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -moz-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -o-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+    }
+    .hasmenu .dropdown-menu,
+    .yamm-fw .dropdown-menu {
+        min-width: 240px;
+        padding: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .hasmenu > ul,
+    .yamm-fw > ul {
+        position: absolute;
+        top: 130%;
+        visibility: hidden;
+        display: block;
+        opacity: 0;
+        left: 0;
+    }
+    .hasmenu > ul.start-right,
+    .yamm-fw > ul.start-right {
+        right: 0;
+        left: auto;
+    }
+    .hasmenu > ul li,
+    .yamm-fw > ul li {
+        position: relative;
+    }
+    .hasmenu > ul li:hover > ul,
+    .yamm-fw > ul li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        left: 100%;
+    }
+    .hasmenu > ul li:hover > ul.show-right,
+    .yamm-fw > ul li:hover > ul.show-right {
+        right: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav > li > a {
+        padding: 1em 0.7em;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-right .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+    .navbar-right .dropdown-menu-left {
+        left: 0;
+        right: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav > li > a {
+        letter-spacing: 1px;
+    }
+    .col-sm-15 {
+        width: 50%;
+        float: left;
+    }
+    .cat-boxes {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 998px) {
+    .shop-item:hover {
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .shop-item {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .vertical-menu {
+        color: #ffffff !important;
+        border-color: #89bbc4 !important;
+        background-color: #89bbc4 !important;
+    }
+    body.leftside {
+        background-color: #89bbc4 !important;
+    }
+    .topfooter .list-inline,
+    .topfooter .navbar-brand,
+    .topfooter .text-right {
+        width: 100%;
+        text-align: center;
+        display: block !important;
+        float: none !important !important;
+        margin: 10px auto !important;
+    }
+    .topfooter .navbar-brand img {
+        margin: 0 auto;
+    }
+    .navbar-toggle {
+        background-color: transparent;
+        background-image: none;
+        border: 0 none;
+        border-radius: 0;
+        float: right;
+        margin-bottom: 8px;
+        margin-right: 15px;
+        margin-top: 10px;
+        padding: 9px 10px;
+        position: relative;
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border: 0 !important;
+        box-shadow: none !important;
+        margin-top: 30px;
+    }
+    .navbar-nav .open .dropdown-menu > li > a,
+    .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 0;
+        color: #fff !important;
+        line-height: 1 !important;
+        border: 0 !important;
+    }
+    .header.affix {
+        position: relative;
+    }
+    .dropdown-mega > li,
+    .dropdown-menu > li {
+        border: 0;
+    }
+    .services-list .col-md-3,
+    .team-member {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 468px) {
+    .col-sm-15 {
+        width: 100%;
+        float: none;
+    }
+}

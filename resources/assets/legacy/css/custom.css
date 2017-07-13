@@ -1,0 +1,152 @@
+/******************************************
+    File Name: custom.css
+    Template Name: HomeStyle
+    Created By: Show WP Team
+    Envato Profile: http://themeforest.net/user/wordpressshowcase
+    Website: https://showwp.com
+    Version: 1.0
+    Support: wordpressshowcasecom@gmail.com
+/******************************************/
+
+mark,
+#sidebar-fix,
+#vertical .navbar-default,
+ul.nav-wizard li,
+.notfound h2,
+.ordertotal header,
+.hero,
+.emtrycart h4 i,
+.pagination > li > a,
+.pagination > li > span,
+.shopcart .table > thead > tr > th,
+.tags a,
+#owl-services .owl-nav [class*="owl-"],
+#owl-testimonial .owl-nav [class*="owl-"],
+#owl-shop .owl-nav [class*="owl-"],
+.button--aylen,
+.dropdown-menu > li:hover,
+.dropdown-menu > li:focus,
+.dropdown-menu > li.active,
+.tparrows,
+.dropdown-menu > li:active,
+.rev-btn-primary,
+.carousel-control .fa {
+    color: #ffffff !important;
+    border-color: #89bbc4 !important;
+    background-color: #89bbc4 !important;
+}
+
+.header {
+    background-color: #89bbc4;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #89bbc4;
+    border-color: #89bbc4;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #89bbc4;
+    border-color: #89bbc4;
+}
+
+.blog-desc .widget-title hr,
+#sidebar .widget-title hr,
+.footer .widget-title hr,
+.section-title hr {
+    border-color: #89bbc4;
+}
+
+.tab-style-1 .nav-tabs > li.active > a {
+    border-top-color: #89bbc4;
+}
+
+.header.affix,
+.da-thumbs .pentry a div {
+    background-color: rgba(137, 187, 196, 0.9);
+}
+
+small,
+.post-date,
+.box i,
+.section-title i,
+.accordion-toggle-2 .panel-heading a i,
+.notfound a,
+a:hover,
+a:focus,
+.footer li:hover a,
+.topfooter li:hover a,
+.topfooter .payments i:hover {
+    color: #89bbc4;
+}
+
+
+/** HOVER **/
+
+.button--aylen::before {
+    background: #75b0ba;
+}
+
+.button--aylen::after {
+    background: #62a3b1;
+}
+
+#vertical .navbar-default .navbar-nav > li:hover,
+#vertical .navbar-default .navbar-nav > li:focus,
+.btn-primary .badge,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:hover {
+    color: #fff;
+    background-color: #62a3b1;
+    border-color: #62a3b1;
+}
+
+#vertical .navbar-default .navbar-nav > li:hover,
+#vertical .navbar-default .navbar-nav > li:focus,
+#vertical .navbar-default .navbar-nav > li > a:hover,
+#vertical .navbar-default .navbar-nav > li > a:focus {
+    background-color: #62a3b1 !important;
+}
+
+.navbar-right .dropdown-menu li:hover,
+.navbar-right .dropdown-menu,
+.yamm .dropdown.yamm-fw .dropdown-menu li:hover,
+.yamm .dropdown.yamm-fw .dropdown-menu {
+    background-color: #ffffff !important;
+}
+
+.navbar-right .dropdown-menu li:hover a,
+.yamm .dropdown.yamm-fw .dropdown-menu li:hover a,
+.yamm .dropdown.yamm-fw .dropdown-menu {
+    color: #333333 !important;
+}
+
+.navbar-right .dropdown-menu li:hover .btn {
+    color: #ffffff !important;
+}
