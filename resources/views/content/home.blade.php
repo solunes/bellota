@@ -148,10 +148,9 @@
     </div><!-- end title -->
 
     <div class="row">
-      @include('singles.product')
-      @include('singles.product')
-      @include('singles.product')
-      @include('singles.product')
+      @foreach($nodes['products'] as $item)
+        @include('singles.product', ['col_md'=>'col-md-3'])
+      @endforeach
     </div><!-- end row -->
   </div><!-- end container -->
 </section><!-- end section -->

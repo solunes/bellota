@@ -43,13 +43,13 @@ class MasterSeeder extends Seeder {
         $page_home = \Solunes\Master\App\Page::create(['type'=>'customized', 'customized_name'=>'home', 'es'=>['name'=>'Inicio']]);
         \Solunes\Master\App\Menu::create(['page_id'=>$page_home->id]);
 
+        // Menu: Tienda
+        $page_store = \Solunes\Master\App\Page::create(['type'=>'customized', 'customized_name'=>'store', 'es'=>['name'=>'Tienda']]);
+        \Solunes\Master\App\Menu::create(['page_id'=>$page_store->id]);
+
         // Menu: About
         $page_about = \Solunes\Master\App\Page::create(['customized_name'=>'about', 'es'=>['name'=>'Bellota']]);
         \Solunes\Master\App\Menu::create(['page_id'=>$page_about->id]);
-
-        // Menu: Productos
-        $page_store = \Solunes\Master\App\Page::create(['type'=>'customized', 'customized_name'=>'store', 'es'=>['name'=>'Tienda']]);
-        \Solunes\Master\App\Menu::create(['page_id'=>$page_store->id]);
 
         // Menu: Blog
         $page_blog = \Solunes\Master\App\Page::create(['customized_name'=>'blog', 'es'=>['name'=>'Blog']]);

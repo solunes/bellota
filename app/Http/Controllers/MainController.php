@@ -40,16 +40,6 @@ class MainController extends Controller {
 	    }
   	}
 
-	public function showSubscribe() {
-	    $array['item'] = \Solunes\Store\App\Product::find(1);
-	    return view('content.subscribe', $array);
-	}
-
-	public function findProductSummary($id) {
-	    $array['item'] = \Solunes\Store\App\Product::find($id);
-	    return view('content.product-summary', $array);
-	}
-
 	public function findProduct($slug) {
 	    $item = \Solunes\Store\App\Product::findBySlug($slug);
 	    $page = \Solunes\Master\App\Page::find(2);
@@ -57,16 +47,16 @@ class MainController extends Controller {
 	}
 
 	public function findCategory($slug) {
-	    $item = \App\Category::findBySlug($slug);
+	    $item = \Solunes\Store\App\Category::findBySlug($slug);
 	    $category_array = [$item->id];
 	    if(count($item->children)>0){
 	      foreach($item->children as $subcategory){
-	      	$category_array = \Func::check_category_children($subcategory, $category_array);
+	      	$category_array = \Store::check_category_children($subcategory, $category_array);
 	      }
 	    }
 	    $page = \Solunes\Master\App\Page::find(2);
 	    $nodes['products'] = \Solunes\Store\App\Product::whereIn('category_id', $category_array)->get();
-	    return view('content.products', ['nodes'=>$nodes, 'page'=>$page, 'category'=>$item]);
+	    return view('content.store', ['nodes'=>$nodes, 'page'=>$page, 'category'=>$item]);
 	}
 
 }

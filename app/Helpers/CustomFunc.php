@@ -12,16 +12,7 @@ class CustomFunc {
             case 'home':
                 $subarray['content'] = \App\Content::getCode('home')->content;
                 $subarray['banners'] = \App\Banner::get();
-                $subarray['subbanners'] = \App\Subbanner::get();
-                $subarray['product_offer'] = \Solunes\Store\App\Product::has('product_offer')->get()->random(3);
-                $product_array = [];
-                $product_array = \DB::table('cart_items')->select('product_id', \DB::raw('count(*) as total'))->groupBy('product_id')->orderBy('total','desc')->limit(3)->lists('product_id');
-                if(count($product_array)<3){
-                    $diff = 3 - count($product_array) + 1;
-                    $product_array = array_merge($product_array, range(1, $diff));
-                }
-                $subarray['product_trending'] = \Solunes\Store\App\Product::whereIn('id', $product_array)->get();
-                $subarray['product_new'] = \Solunes\Store\App\Product::orderBy('created_at','DESC')->limit(3)->get();
+                $subarray['products'] = \Solunes\Store\App\Product::get()->random(4);
             break;
             case 'store':
                 $subarray['products'] = \Solunes\Store\App\Product::get()->random(8);
@@ -36,9 +27,7 @@ class CustomFunc {
         $array_node_names = [];
         $array_nodes = [];
         switch ($page->customized_name) {
-            case 'offers': $array_nodes = ['offers'=>'content'];                   
-            break;
-            case 'how-to': $array_nodes = ['how-to'=>'content'];                   
+            case 'blog': $array_nodes = ['offers'=>'content'];                   
             break;
             case 'about': $array_nodes = ['about'=>'content'];          
             break;

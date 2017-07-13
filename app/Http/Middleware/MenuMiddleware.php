@@ -50,7 +50,7 @@ class MenuMiddleware
                     $second_level->prepend('<span class="fa fa-caret-right"></span> ');
                     $second_level->attribute(['class' => 'dropdown hasmenu']);
                     foreach($category->children as $subcategory){
-                      $third_level = $second_level->add($subcategory->name, url('category/'.$subcategory->slug));
+                      $third_level = $second_level->add($subcategory->name, url('categoria/'.$subcategory->slug));
                     }
                   }
                 }

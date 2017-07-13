@@ -18,14 +18,11 @@ Route::get('/', 'MainController@showIndex');
 
 Route::group(['prefix'=>'process'], function(){
     Route::get('/change-locale/{lang}', 'ProcessController@getChangeLocale');
-    Route::post('/suscribete', 'ProcessController@postSubscribe');
     Route::post('/save-model', 'ProcessController@postSaveModel');
     Route::post('/model', 'ProcessController@postModel');
 });
 
-Route::get('product-summary/{id}', array('as' => 'MainController', 'uses' => 'MainController@findProductSummary'));
-Route::get('product/{slug}', array('as' => 'MainController', 'uses' => 'MainController@findProduct'));
-Route::get('category/{slug}', array('as' => 'MainController', 'uses' => 'MainController@findCategory'));
-Route::get('suscribete', array('as' => 'MainController', 'uses' => 'MainController@showSubscribe'));
+Route::get('producto/{slug}', array('as' => 'MainController', 'uses' => 'MainController@findProduct'));
+Route::get('categoria/{slug}', array('as' => 'MainController', 'uses' => 'MainController@findCategory'));
 
 Route::get('{slug}/{extra_slug?}', array('as' => 'MainController', 'uses' => 'MainController@showPage'));

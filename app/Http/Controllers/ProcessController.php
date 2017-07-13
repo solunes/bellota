@@ -23,34 +23,6 @@ class ProcessController extends Controller {
     return redirect($this->prev);
   }
 
-
-  public function postSubscribe(Request $request) {
-    if($request->has('email')&&$request->has('name')){
-      if(!$user = \App\User::where('email', $request->input('email'))->first()){
-        $user = new \App\User;
-        $user->name = $request->input('name');
-        $user->email = $request->input('email');
-        $user->password = '12345678';
-        $user->save();
-      }
-
-      if(!$newsletter = \App\Newsletter::where('email', $request->input('email'))->first()){
-        $newsletter = new \App\Newsletter;
-        $newsletter->name = $request->input('name');
-        $newsletter->email = $request->input('email');
-        $newsletter->save();
-      }
-
-      if (\Auth::attempt(['email'=>$user->email, 'password'=>'12345678'], true)) {
-        return redirect($this->prev)->with('message_success', 'Felicidades, se suscribió correctamente a nuestro sistema.');
-      } else {
-        return redirect($this->prev)->with('message_success', 'Felicidades, se suscribió correctamente a nuestro sistema.');
-      }
-    } else {
-      return redirect($this->prev)->with('message_error', 'Debe llenar ambos campos para hacer posible su registro.');
-    }
-  }
-
   public function postSaveModel(Request $request) {
       $model = $request->input('model_node');
       $action = $request->input('action');
