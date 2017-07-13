@@ -18,14 +18,13 @@
   <link rel="stylesheet" href="{{ url(elixir("assets/css/plugins.css")) }}">
   <link rel="stylesheet" href="{{ url(elixir("assets/css/template.css")) }}">
   <!--<link rel="stylesheet" href="{{ asset('assets/admin/css/master.css') }}">
-  <link rel="stylesheet" href="{{ asset('assets/admin/css/admin.css') }}">
-  <link rel="stylesheet" href="{{ url(elixir("assets/css/main.css")) }}">-->
+  <link rel="stylesheet" href="{{ asset('assets/admin/css/admin.css') }}">-->
+  <link rel="stylesheet" href="{{ url(elixir("assets/css/main.css")) }}">
 
   @yield('css')
   <!--[if lt IE 9]>
     <script src="{{ url(elixir("assets/js/ie8.js")) }}"></script> 
   <![endif]-->
-  <base href="{{ $site->root }}"/>
 </head>
 <body class="boxed main-site">
 

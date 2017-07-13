@@ -127,61 +127,14 @@
     </div>
 
     <div id="da-thumbs" class="da-thumbs">
-      <div class="pentry item-w1 item-h1 cat3">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_01.jpg') }}" alt="" class="img-responsive">
-          <div><span>green sofa set</span></div>
-        </a>
-      </div>
-
-      <div class="pentry item-w1 item-h1 cat1 cat2">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_02.jpg') }}" alt="" class="img-responsive">
-          <div><span>four pillow set</span></div>
-        </a>
-      </div>
-
-      <div class="pentry item-w1 item-h1 cat3">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_03.jpg') }}" alt="" class="img-responsive">
-          <div><span>combination of sofa sets</span></div>
-        </a>
-      </div>
-
-      <div class="pentry item-w1 item-h1 cat1 cat2">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_04.jpg') }}" alt="" class="img-responsive">
-          <div><span>corner seat</span></div>
-        </a>
-      </div>
-
-      <div class="pentry item-w1 item-h1 cat1">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_05.jpg') }}" alt="" class="img-responsive">
-          <div><span>sofa and coffee table lamp</span></div>
-        </a>
-      </div>
-
-      <div class="pentry item-w1 item-h1 cat2">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_06.jpg') }}" alt="" class="img-responsive">
-          <div><span>desk lamp</span></div>
-        </a>
-      </div>
-
-      <div class="pentry item-w1 item-h1 cat3">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_07.jpg') }}" alt="" class="img-responsive">
-          <div><span>yellow sofa set</span></div>
-        </a>
-      </div>
-
-      <div class="pentry item-w1 item-h1 cat3">
-        <a href="single-project.html" title="">
-          <img src="{{ asset('assets/upload/project_08.jpg') }}" alt="" class="img-responsive">
-          <div><span>bed and armchair</span></div>
-        </a>
-      </div>
+      @include('singles.category')
+      @include('singles.category')
+      @include('singles.category')
+      @include('singles.category')
+      @include('singles.category')
+      @include('singles.category')
+      @include('singles.category')
+      @include('singles.category')
     </div><!-- end div -->
   </div><!-- end container-fluid -->
 </section><!-- end section -->
@@ -195,85 +148,10 @@
     </div><!-- end title -->
 
     <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="shop-item text-center">
-          <div class="shop-thumbnail">
-            <img src="{{ asset('assets/upload/shop_01.jpg') }}" alt="" class="img-responsive">
-          </div><!-- end shop-thumbnail -->
-          <div class="shop-desc">
-            <h3><a href="shop-single.html" title="">Pink Lamp</a></h3>
-            <small class="regular">$90.00</small>
-          </div><!-- end shop-desc -->
-
-          <div class="shop-meta clearfix">
-            <ul class="">
-              <li><a href="shop-single.html"><i class="fa fa-search"></i> Details</a></li>
-              <li><a href="shop-wishlist.html"><i class="fa fa-heart-o"></i> Wishlist</a></li>
-              <li><a href="shop-compare.html"><i class="fa fa-eye"></i> Compare</a></li>
-            </ul><!-- end list -->
-          </div><!-- end shop-meta --> 
-        </div><!-- end shop-item -->
-      </div><!-- end col -->
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="shop-item text-center">
-          <div class="shop-thumbnail">
-            <img src="{{ asset('assets/upload/shop_02.jpg') }}" alt="" class="img-responsive">
-          </div><!-- end shop-thumbnail -->
-          <div class="shop-desc">
-            <h3><a href="shop-single.html" title="">Oldschool Armchair</a></h3>
-            <small class="regular">$1233.00</small>
-          </div><!-- end shop-desc -->
-
-          <div class="shop-meta clearfix">
-            <ul class="">
-              <li><a href="shop-single.html"><i class="fa fa-search"></i> Details</a></li>
-              <li><a href="shop-wishlist.html"><i class="fa fa-heart-o"></i> Wishlist</a></li>
-              <li><a href="shop-compare.html"><i class="fa fa-eye"></i> Compare</a></li>
-            </ul><!-- end list -->
-          </div><!-- end shop-meta --> 
-        </div><!-- end shop-item -->
-      </div><!-- end col -->
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="shop-item text-center">
-          <div class="shop-thumbnail">
-            <img src="{{ asset('assets/upload/shop_03.jpg') }}" alt="" class="img-responsive">
-          </div><!-- end shop-thumbnail -->
-          <div class="shop-desc">
-            <h3><a href="shop-single.html" title="">Classic Gramophone</a></h3>
-            <small class="regular">$553.00</small>
-          </div><!-- end shop-desc -->
-
-          <div class="shop-meta clearfix">
-            <ul class="">
-              <li><a href="shop-single.html"><i class="fa fa-search"></i> Details</a></li>
-              <li><a href="shop-wishlist.html"><i class="fa fa-heart-o"></i> Wishlist</a></li>
-              <li><a href="shop-compare.html"><i class="fa fa-eye"></i> Compare</a></li>
-            </ul><!-- end list -->
-          </div><!-- end shop-meta --> 
-        </div><!-- end shop-item -->
-      </div><!-- end col -->
-
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="shop-item text-center">
-          <div class="shop-thumbnail">
-            <img src="{{ asset('assets/upload/shop_04.jpg') }}" alt="" class="img-responsive">
-          </div><!-- end shop-thumbnail -->
-          <div class="shop-desc">
-            <h3><a href="shop-single.html" title="">Berlingo Armchair</a></h3>
-            <small class="regular">$600.00</small>
-          </div><!-- end shop-desc -->
-
-          <div class="shop-meta clearfix">
-            <ul class="">
-              <li><a href="shop-single.html"><i class="fa fa-search"></i> Details</a></li>
-              <li><a href="shop-wishlist.html"><i class="fa fa-heart-o"></i> Wishlist</a></li>
-              <li><a href="shop-compare.html"><i class="fa fa-eye"></i> Compare</a></li>
-            </ul><!-- end list -->
-          </div><!-- end shop-meta --> 
-        </div><!-- end shop-item -->
-      </div><!-- end col -->
+      @include('singles.product')
+      @include('singles.product')
+      @include('singles.product')
+      @include('singles.product')
     </div><!-- end row -->
   </div><!-- end container -->
 </section><!-- end section -->
@@ -287,19 +165,8 @@
     </div><!-- end title -->
 
     <div id="owl-testimonial" class="text-center">
-      <div class="testi-item">
-        <img src="{{ asset('assets/upload/avatar_01.jpg') }}" alt="" class="img-circle">
-        <h4>Jenny DEO</h4>
-        <small>Envato.com</small>
-        <p class="lead">It was popularised in the with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop ...</p>
-      </div><!-- end item -->
-
-      <div class="testi-item">
-        <img src="{{ asset('assets/upload/avatar_03.png') }}" alt="" class="img-circle">
-        <h4>Mark DEO</h4>
-        <small>Envato.com</small>
-        <p class="lead">It was popularised in the with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop ...</p>
-      </div><!-- end item --> 
+      @include('singles.testimonial')
+      @include('singles.testimonial')
     </div><!-- end relative -->
 
   </div><!-- end container -->
@@ -314,95 +181,9 @@
     </div><!-- end title -->
 
     <div class="blog-list row">
-      <div class="blog-wrapper col-md-4 col-sm-6">
-
-        <div class="blog-media">
-          <img src="{{ asset('assets/upload/blog_01.jpg') }}" alt="" class="img-responsive">
-        </div><!-- end media -->
-
-        <div class="blog-desc">
-          <span class="post-date">May 13, 2016</span>
-          <h3><a href="single.html" title="">Our New Workspace</a></h3>
-          <div class="post-meta">
-            <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-comment"></i> 04 Comments</a></li>
-              <li><a href="#"><i class="fa fa-tag"></i> Furniture</a></li>
-              <li><a href="#"><i class="fa fa-eye"></i>44 Views</a></li>
-            </ul><!-- end ul -->
-          </div><!-- end meta -->
-
-          <p>Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
-        </div><!-- end desc -->
-
-        <div class="blog-bottom clearfix">
-          <a href="single.html" class="button button--aylen btn">Read More</a>
-        </div><!-- end blog-bottom -->
-      </div><!-- end blog-wrapper -->
-
-      <div class="blog-wrapper col-md-4 col-sm-6">
-        <div class="blog-media">
-          <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="{{ asset('assets/upload/blog_03.jpg') }}" alt="" class="img-responsive">
-              </div>
-              <div class="item">
-                <img src="{{ asset('assets/upload/blog_04.jpg') }}" alt="" class="img-responsive">
-              </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
-              <span class="fa fa-angle-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
-              <span class="fa fa-angle-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div><!-- end media -->
-
-        <div class="blog-desc">
-          <span class="post-date">May 17, 2016</span>
-          <h3><a href="single.html" title="">Boby Markinson Collection</a></h3>
-          <div class="post-meta">
-            <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-comment"></i> 02 Comments</a></li>
-              <li><a href="#"><i class="fa fa-tag"></i> Collection</a></li>
-              <li><a href="#"><i class="fa fa-eye"></i>41 Views</a></li>
-            </ul><!-- end ul -->
-          </div><!-- end meta -->
-
-          <p>Here is a list of some of the most popular festivals and fiestas th has to offer thisfiestas the Mardin has to offer! Feel alive! So if you’re looking for, </p>
-        </div><!-- end desc -->
-
-        <div class="blog-bottom clearfix">
-          <a href="single.html" class="button button--aylen btn">Read More</a>
-        </div><!-- end blog-bottom -->
-      </div><!-- end blog-wrapper -->
-
-      <div class="blog-wrapper col-md-4 col-sm-6">
-        <div class="blog-media">
-          <img src="{{ asset('assets/upload/blog_02.jpg') }}" alt="" class="img-responsive">
-        </div><!-- end media -->
-
-        <div class="blog-desc">
-          <span class="post-date">May 12, 2016</span>
-          <h3><a href="single.html" title="">A woman thinking</a></h3>
-          <div class="post-meta">
-            <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-comment"></i> 41 Comments</a></li>
-              <li><a href="#"><i class="fa fa-tag"></i> Design</a></li>
-              <li><a href="#"><i class="fa fa-eye"></i>561 Views</a></li>
-            </ul><!-- end ul -->
-          </div><!-- end meta -->
-
-          <p>Mardin has to offer! Feel alive! So if you’re for, here is a list of some of the most popular festivals and fiestas the Mardin has to offer thisfiestas the.</p>
-        </div><!-- end desc -->
-
-        <div class="blog-bottom clearfix">
-          <a href="single.html" class="button button--aylen btn">Read More</a>
-        </div><!-- end blog-bottom -->
-      </div><!-- end blog-wrapper -->
+      @include('singles.blog')
+      @include('singles.blog')
+      @include('singles.blog')
     </div><!-- end blog-list -->
   </div><!-- end container -->
 </section><!-- end section -->
@@ -416,25 +197,11 @@
     </div><!-- end title -->
 
     <div id="owl-client" class="clients">
-      <div class="client-logo GrayScale">
-        <a href="#"><img src="{{ asset('assets/upload/client_01.png') }}" alt="" class="img-responsive"></a>
-      </div><!-- end logo -->
-
-      <div class="client-logo GrayScale">
-        <a href="#"><img src="{{ asset('assets/upload/client_02.png') }}" alt="" class="img-responsive"></a>
-      </div><!-- end logo -->
-
-      <div class="client-logo GrayScale">
-        <a href="#"><img src="{{ asset('assets/upload/client_03.png') }}" alt="" class="img-responsive"></a>
-      </div><!-- end logo -->
-
-      <div class="client-logo GrayScale">
-        <a href="#"><img src="{{ asset('assets/upload/client_04.png') }}" alt="" class="img-responsive"></a>
-      </div><!-- end logo -->
-
-      <div class="client-logo GrayScale">
-        <a href="#"><img src="{{ asset('assets/upload/client_05.png') }}" alt="" class="img-responsive"></a>
-      </div><!-- end logo -->
+      @include('singles.customer')
+      @include('singles.customer')
+      @include('singles.customer')
+      @include('singles.customer')
+      @include('singles.customer')
     </div><!-- end row -->
 
   </div><!-- end container -->
