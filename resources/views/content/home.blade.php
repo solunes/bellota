@@ -10,7 +10,7 @@
     <div id="rev_slider_56_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
       <ul> 
         <li data-index="rs-214" data-transition="fade" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-description="">
-          <img src="{{ asset('assets/upload/slider_01.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+          <img src="{{ asset('assets/images/slider_home1.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
 
           <div class="tp-caption Sports-Display   tp-resizeme rs-parallaxlevel-0" 
             id="slide-214-layer-1" 
@@ -127,14 +127,62 @@
     </div>
 
     <div id="da-thumbs" class="da-thumbs">
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category1.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category2.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category3.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category4.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category5.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category6.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category7.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <div class="pentry item-w1 item-h1 cat3">
+        <a href="single-project.html" title="">
+          <img src="{{ asset('assets/images/category8.jpg') }}" alt="" class="img-responsive">
+          <div><span>green sofa set</span></div>
+        </a>
+      </div>
+      <!--@include('singles.category')
       @include('singles.category')
       @include('singles.category')
       @include('singles.category')
       @include('singles.category')
       @include('singles.category')
       @include('singles.category')
-      @include('singles.category')
-      @include('singles.category')
+      @include('singles.category')-->
     </div><!-- end div -->
   </div><!-- end container-fluid -->
 </section><!-- end section -->
@@ -148,14 +196,89 @@
     </div><!-- end title -->
 
     <div class="row">
-      @foreach($nodes['products'] as $item)
-        @include('singles.product', ['col_md'=>'col-md-3'])
-      @endforeach
+    
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="shop-item text-center">
+          <div class="shop-thumbnail">
+            <img src="{{ asset('assets/images/product1.jpg') }}" alt="" class="img-responsive">
+          </div><!-- end shop-thumbnail -->
+          <div class="shop-desc">
+            <h3><a href="#" title="">Product</a></h3>
+            <small class="regular">Item}</small>
+          </div><!-- end shop-desc -->
+
+          <div class="shop-meta clearfix">
+            <ul class="">
+              <li><a href="#"><i class="fa fa-search"></i> Ver más</a></li>
+              <li><a href="#"><i class="fa fa-money"></i> Comprar</a></li>
+              <li><a href="#"><i class="fa fa-cart-plus"></i> Agregar</a></li>
+            </ul><!-- end list -->
+          </div><!-- end shop-meta --> 
+        </div><!-- end shop-item -->
+      </div><!-- end col -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="shop-item text-center">
+          <div class="shop-thumbnail">
+            <img src="{{ asset('assets/images/product2.jpg') }}" alt="" class="img-responsive">
+          </div><!-- end shop-thumbnail -->
+          <div class="shop-desc">
+            <h3><a href="#" title="">Product</a></h3>
+            <small class="regular">Item}</small>
+          </div><!-- end shop-desc -->
+
+          <div class="shop-meta clearfix">
+            <ul class="">
+              <li><a href="#"><i class="fa fa-search"></i> Ver más</a></li>
+              <li><a href="#"><i class="fa fa-money"></i> Comprar</a></li>
+              <li><a href="#"><i class="fa fa-cart-plus"></i> Agregar</a></li>
+            </ul><!-- end list -->
+          </div><!-- end shop-meta --> 
+        </div><!-- end shop-item -->
+      </div><!-- end col -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="shop-item text-center">
+          <div class="shop-thumbnail">
+            <img src="{{ asset('assets/images/product3.jpg') }}" alt="" class="img-responsive">
+          </div><!-- end shop-thumbnail -->
+          <div class="shop-desc">
+            <h3><a href="#" title="">Product</a></h3>
+            <small class="regular">Item}</small>
+          </div><!-- end shop-desc -->
+
+          <div class="shop-meta clearfix">
+            <ul class="">
+              <li><a href="#"><i class="fa fa-search"></i> Ver más</a></li>
+              <li><a href="#"><i class="fa fa-money"></i> Comprar</a></li>
+              <li><a href="#"><i class="fa fa-cart-plus"></i> Agregar</a></li>
+            </ul><!-- end list -->
+          </div><!-- end shop-meta --> 
+        </div><!-- end shop-item -->
+      </div><!-- end col -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="shop-item text-center">
+          <div class="shop-thumbnail">
+            <img src="{{ asset('assets/images/product1.jpg') }}" alt="" class="img-responsive">
+          </div><!-- end shop-thumbnail -->
+          <div class="shop-desc">
+            <h3><a href="#" title="">Product</a></h3>
+            <small class="regular">Item}</small>
+          </div><!-- end shop-desc -->
+
+          <div class="shop-meta clearfix">
+            <ul class="">
+              <li><a href="#"><i class="fa fa-search"></i> Ver más</a></li>
+              <li><a href="#"><i class="fa fa-money"></i> Comprar</a></li>
+              <li><a href="#"><i class="fa fa-cart-plus"></i> Agregar</a></li>
+            </ul><!-- end list -->
+          </div><!-- end shop-meta --> 
+        </div><!-- end shop-item -->
+      </div><!-- end col -->
+    
     </div><!-- end row -->
   </div><!-- end container -->
 </section><!-- end section -->
 
-<section class="section paralbackground parallax content-light" style="background-image:url('{{ asset('assets/upload/parallax_02.jpg') }}');" data-img-width="2000" data-img-height="2000" data-diff="10">
+<section class="section paralbackground parallax content-light" style="background-image:url('{{ asset('assets/images/clients_bg.jpg') }}');" data-img-width="2000" data-img-height="2000" data-diff="10">
   <div class="container">
     <div class="section-title text-center clearfix">
       <h4>Happy Clients</h4>
@@ -180,9 +303,81 @@
     </div><!-- end title -->
 
     <div class="blog-list row">
-      @include('singles.blog')
-      @include('singles.blog')
-      @include('singles.blog')
+      <div class="blog-wrapper col-md-4 col-sm-6">
+
+        <div class="blog-media">
+          <img src="{{ asset('assets/images/blog1.jpg') }}" alt="" class="img-responsive">
+        </div><!-- end media -->
+
+        <div class="blog-desc">
+          <span class="post-date">May 13, 2016</span>
+          <h3><a href="single.html" title="">Our New Workspace</a></h3>
+          <div class="post-meta">
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-comment"></i> 04 Comments</a></li>
+              <li><a href="#"><i class="fa fa-tag"></i> Furniture</a></li>
+              <li><a href="#"><i class="fa fa-eye"></i>44 Views</a></li>
+            </ul><!-- end ul -->
+          </div><!-- end meta -->
+
+          <p>Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+        </div><!-- end desc -->
+
+        <div class="blog-bottom clearfix">
+          <a href="single.html" class="button button--aylen btn">Read More</a>
+        </div><!-- end blog-bottom -->
+      </div><!-- end blog-wrapper -->
+
+      <div class="blog-wrapper col-md-4 col-sm-6">
+
+        <div class="blog-media">
+          <img src="{{ asset('assets/images/blog2.jpg') }}" alt="" class="img-responsive">
+        </div><!-- end media -->
+
+        <div class="blog-desc">
+          <span class="post-date">May 13, 2016</span>
+          <h3><a href="single.html" title="">Our New Workspace</a></h3>
+          <div class="post-meta">
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-comment"></i> 04 Comments</a></li>
+              <li><a href="#"><i class="fa fa-tag"></i> Furniture</a></li>
+              <li><a href="#"><i class="fa fa-eye"></i>44 Views</a></li>
+            </ul><!-- end ul -->
+          </div><!-- end meta -->
+
+          <p>Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+        </div><!-- end desc -->
+
+        <div class="blog-bottom clearfix">
+          <a href="single.html" class="button button--aylen btn">Read More</a>
+        </div><!-- end blog-bottom -->
+      </div><!-- end blog-wrapper -->
+
+      <div class="blog-wrapper col-md-4 col-sm-6">
+
+        <div class="blog-media">
+          <img src="{{ asset('assets/images/blog3.jpg') }}" alt="" class="img-responsive">
+        </div><!-- end media -->
+
+        <div class="blog-desc">
+          <span class="post-date">May 13, 2016</span>
+          <h3><a href="single.html" title="">Our New Workspace</a></h3>
+          <div class="post-meta">
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-comment"></i> 04 Comments</a></li>
+              <li><a href="#"><i class="fa fa-tag"></i> Furniture</a></li>
+              <li><a href="#"><i class="fa fa-eye"></i>44 Views</a></li>
+            </ul><!-- end ul -->
+          </div><!-- end meta -->
+
+          <p>Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</p>
+        </div><!-- end desc -->
+
+        <div class="blog-bottom clearfix">
+          <a href="single.html" class="button button--aylen btn">Read More</a>
+        </div><!-- end blog-bottom -->
+      </div><!-- end blog-wrapper -->
+
     </div><!-- end blog-list -->
   </div><!-- end container -->
 </section><!-- end section -->
@@ -196,11 +391,21 @@
     </div><!-- end title -->
 
     <div id="owl-client" class="clients">
-      @include('singles.customer')
-      @include('singles.customer')
-      @include('singles.customer')
-      @include('singles.customer')
-      @include('singles.customer')
+      <div class="client-logo GrayScale">
+        <a href="#"><img src="{{ asset('assets/images/logo1.png') }}" alt="" class="img-responsive"></a>
+      </div><!-- end logo -->
+      <div class="client-logo GrayScale">
+        <a href="#"><img src="{{ asset('assets/images/logo2.png') }}" alt="" class="img-responsive"></a>
+      </div><!-- end logo -->
+      <div class="client-logo GrayScale">
+        <a href="#"><img src="{{ asset('assets/images/logo3.png') }}" alt="" class="img-responsive"></a>
+      </div><!-- end logo -->
+      <div class="client-logo GrayScale">
+        <a href="#"><img src="{{ asset('assets/images/logo4.png') }}" alt="" class="img-responsive"></a>
+      </div><!-- end logo -->
+      <div class="client-logo GrayScale">
+        <a href="#"><img src="{{ asset('assets/images/logo5.png') }}" alt="" class="img-responsive"></a>
+      </div><!-- end logo -->
     </div><!-- end row -->
 
   </div><!-- end container -->

@@ -27,7 +27,7 @@
 </li>
 <li class="dropdown searchdropdown hasmenu hidden-sm">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></a>
-  <ul class="dropdown-menu show-right">
+  <ul class="dropdown-menu show-right store_white">
     <li>
       <div id="custom-search-input">
         <div class="input-group col-md-12">

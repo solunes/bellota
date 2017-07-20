@@ -49,7 +49,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a>
+              <a class="navbar-brand" href="index.html"><img src="{{ asset('assets/images/logo_bellota.png') }}" alt=""></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -209,7 +209,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-12">
-            <a class="navbar-brand" href="index.html"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img src="{{ asset('assets/images/logo_bellota_footer.png') }}" alt=""></a>
           </div><!-- end col -->
 
           <div class="col-md-4 col-sm-4 col-xs-12 text-center payments">
