@@ -59,4 +59,10 @@ class MainController extends Controller {
 	    return view('content.store', ['nodes'=>$nodes, 'page'=>$page, 'category'=>$item]);
 	}
 
+	public function findArticle($slug) {
+	    $item = \App\Blog::findBySlug($slug);
+	    $page = \Solunes\Master\App\Page::find(4);
+	    return view('content.article', ['item'=>$item, 'page'=>$page]);
+	}
+
 }

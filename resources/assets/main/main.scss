@@ -7,14 +7,14 @@
 $font-title: 'Abel', Helvetica;
 $font-subtext: 'Source Sans Pro', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
-$primary-color: #136957;
-$second-color: #2a917b;
+$primary-color: #cc1b54;
+$second-color: #b9d5bf;
 $third-color: #000000;
 $background-color: #fff;
 $text-color: #555555;
 
-$admin-main-color: #136957;
-$admin-second-color: #2a917b;
+$admin-main-color: #cc1b54;
+$admin-second-color: #b9d5bf;
 $admin-light-color: #ffffff;
 
 @import "global/mixins";
@@ -30,8 +30,7 @@ body.boxed {
 }*/
 
 body.main-site {
-	$primary-color: #cc1b54;
-	$second-color: #b9d5bf;
+	#message { display: block; }
 	#wrapper {
 		.header {
 			background-color: $primary-color;

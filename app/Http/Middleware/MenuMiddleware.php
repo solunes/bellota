@@ -43,7 +43,7 @@ class MenuMiddleware
                   }
                 }
               }
-              if($menu_option->page_id==3){
+              /*if($menu_option->page_id==3){
                 foreach(\Solunes\Store\App\Category::whereNull('parent_id')->get() as $category){
                   $second_level = $first_level->add($category->name, url('category/'.$category->slug));
                   if(count($category->children)>0){
@@ -54,7 +54,7 @@ class MenuMiddleware
                     }
                   }
                 }
-              }
+              }*/
             }
           }
         }

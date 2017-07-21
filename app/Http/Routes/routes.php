@@ -24,5 +24,6 @@ Route::group(['prefix'=>'process'], function(){
 
 Route::get('producto/{slug}', array('as' => 'MainController', 'uses' => 'MainController@findProduct'));
 Route::get('categoria/{slug}', array('as' => 'MainController', 'uses' => 'MainController@findCategory'));
+Route::get('articulo/{slug}', array('as' => 'MainController', 'uses' => 'MainController@findArticle'));
 
 Route::get('{slug}/{extra_slug?}', array('as' => 'MainController', 'uses' => 'MainController@showPage'));

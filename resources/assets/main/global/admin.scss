@@ -13,6 +13,20 @@ body.admin-site {
 	.btn-site:hover { background: $admin-second-color; }
 	.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus { background: $admin-main-color; border-color: $admin-main-color; }
 
+	/* Sale */
+	#create-sale{
+		label { font-size: 20px; }
+		input.form-control, select.form-control, .select2-container .select2-selection--single .select2-selection__rendered { font-size: 20px; padding: 10px 20px !important; }
+		.btn { font-size: 20px; padding: 10px 20px !important; width: 100%; }
+		.mt-checkbox>span, .mt-radio>span { top: 9px; }
+
+		.total { font-size: 24px; font-weight: bold; color: $admin-main-color; }
+		#products #amount.form-control[readonly], #paid_amount.form-control[readonly] { background: $admin-main-color; color: #fff; }
+		.icon { text-align: right;
+			i { font-size: 60px; line-height: 90px; color: $admin-main-color; }
+		}
+	}
+
 	/* Admin Editor */
 	.flex-item {
 		.form_fields_actions { display: none; background: #f3f3f3; border: 1px dashed #ccc; padding: 10px; color: #777; }

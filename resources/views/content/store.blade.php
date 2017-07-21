@@ -13,7 +13,7 @@
 <div class="page-title">
   <div class="container clearfix">
     <div class="title-area pull-left">
-      <h2>{{ $page->name }} <small>Beautiful Home Decoration Materials!</small></h2>
+      <h2>{{ $page->name }} <small>Bellota Scrapbooking Store!</small></h2>
     </div><!-- /.pull-right -->
     <div class="pull-right hidden-xs">
       <div class="bread">
@@ -44,26 +44,11 @@
       <div id="sidebar" class="col-md-3 col-sm-12">
         <div class="widget clearfix">
           <div class="about-widget">
-            <div class="post-media">
-            <img src="{{ asset('assets/upload/me.jpg') }}" alt="" class="img-responsive">
-            </div>
-
-            <div class="social-icons">
-              <ul class="list-inline">
-                <li class="facebook"><a data-tooltip="tooltip" data-placement="top" title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li class="google"><a data-tooltip="tooltip" data-placement="top" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li class="twitter"><a data-tooltip="tooltip" data-placement="top" title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li class="linkedin"><a data-tooltip="tooltip" data-placement="top" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li class="pinterest"><a data-tooltip="tooltip" data-placement="top" title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li class="skype"><a data-tooltip="tooltip" data-placement="top" title="Skype" href="#"><i class="fa fa-skype"></i></a></li>
-              </ul>
-            </div><!-- end social icons -->
 
             <div class="about-desc">
-              <h4>John BRITTO</h4>
-              <small>Junior Web Designer</small>
-              <p>Welcome to my portfolio, my name is John. I create handcraft web design and graphic sources for beginners like me.</p>
-              <img src="{{ asset('assets/upload/signature.png') }}" alt="">
+              <h4>Bellota Scrapbooking</h4>
+              <small>Tu tienda favorita</small>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sollicitudin lacus, at iaculis ligula convallis ultrices. Donec eget tempor lorem, a porttitor ligula. Vestibulum erat libero, hendrerit eu nibh a, auctor aliquet quam.</p>
             </div>
           </div>
           <!-- end about-widget -->
@@ -72,7 +57,7 @@
 
         <div class="widget clearfix">
           <div class="widget-title">
-            <h4>Be Social</h4>
+            <h4>Nuestras Redes Sociales</h4>
             <hr>
           </div>
           <div class="menu-widget">
@@ -88,24 +73,6 @@
         </div>
         <!-- end widget -->
 
-        <div class="widget clearfix">
-          <div class="widget-title">
-            <h4>Tags</h4>
-            <hr>
-          </div>
-          <div class="tags">
-            <a href="#">design</a>
-            <a href="#">art</a>
-            <a href="#">photo</a>
-            <a href="#">student</a>
-            <a href="#">material</a>
-            <a href="#">app</a>
-            <a href="#">yellow</a>
-            <a href="#">light</a>
-          </div>
-          <!-- end tags-widget -->
-        </div>
-        <!-- end widget -->
       </div><!-- end sidebar -->
     </div>
   </div>

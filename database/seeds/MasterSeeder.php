@@ -19,9 +19,9 @@ class MasterSeeder extends Seeder {
         ]);*/
         // General
         $site = \Solunes\Master\App\Site::find(1);
-        $site->name = 'Master';
-        $site->domain = 'http://master.dev/';
-        $site->title = 'Muestra de Tienda Virtual';
+        $site->name = 'Bellota';
+        $site->domain = 'http://bellota.dev/';
+        $site->title = 'Tienda de Bellota Scrapbooking';
         $site->description = 'Nuestro objetivo es programar la plataforma del Programa Municipal';
         $site->keywords = 'programa, municipal, iniciativas sostenibles, medio ambiente, guayaquil, ecuador';
         $site->google_verification = '';
@@ -33,10 +33,8 @@ class MasterSeeder extends Seeder {
         $node_title = \Solunes\Master\App\Node::create(['name'=>'title']);
         $node_content = \Solunes\Master\App\Node::create(['name'=>'content']);
         $node_banner = \Solunes\Master\App\Node::create(['name'=>'banner']);
-        $node_subbanner = \Solunes\Master\App\Node::create(['name'=>'subbanner']);
-        $node_newsletter = \Solunes\Master\App\Node::create(['name'=>'newsletter']);
-        $node_ad = \Solunes\Master\App\Node::create(['name'=>'ad']);
-        $node_delivery_item = \Solunes\Master\App\Node::create(['name'=>'delivery-time']);
+        $node_blog = \Solunes\Master\App\Node::create(['name'=>'blog']);
+        $node_contact = \Solunes\Master\App\Node::create(['name'=>'contact']);
         $node_contact_form = \Solunes\Master\App\Node::create(['name'=>'contact-form', 'folder'=>'form']);
         
         // Menu: Home

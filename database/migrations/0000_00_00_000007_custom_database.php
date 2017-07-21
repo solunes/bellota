@@ -56,43 +56,39 @@ class CustomDatabase extends Migration
             $table->string('image')->nullable();
             $table->timestamps();
         });
-        Schema::create('subbanners', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order')->nullable()->default(0);
             $table->string('name')->nullable();
-            $table->text('subtext')->nullable();
-            $table->string('video')->nullable();
+            $table->string('slug')->nullable();
+            $table->string('tag')->nullable();
             $table->string('image')->nullable();
-            $table->timestamps();
-        });
-        Schema::create('newsletters', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->nullable();
-            $table->string('email')->nullable();
-            $table->timestamps();
-        });
-        Schema::create('ads', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title')->nullable();
+            $table->text('summary')->nullable();
             $table->text('content')->nullable();
-            $table->string('image')->nullable();
             $table->timestamps();
         });
-        Schema::create('delivery_times', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->nullable();
-            $table->string('day_of_week')->nullable();
-            $table->time('time')->nullable();
+            $table->string('name');
+            $table->string('text')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
+            $table->string('latitude')->nullable();
+            $table->string('longitude')->nullable();
             $table->timestamps();
         });
         Schema::create('contact_forms', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
-            $table->text('message');
+            $table->text('message')->nullable();
             $table->timestamps();
+        });
+        Schema::table('categories', function (Blueprint $table) {
+            $table->string('image')->nullable()->after('name');
         });
         Schema::table('products', function (Blueprint $table) {
             $table->text('additional_information')->nullable()->after('offer_price');
@@ -109,10 +105,8 @@ class CustomDatabase extends Migration
     public function down()
     {
         Schema::dropIfExists('contact_forms');
-        Schema::dropIfExists('delivery_times');
-        Schema::dropIfExists('ads');
-        Schema::dropIfExists('newsletters');
-        Schema::dropIfExists('subbanners');
+        Schema::dropIfExists('contacts');
+        Schema::dropIfExists('blogs');
         Schema::dropIfExists('banners');
         Schema::dropIfExists('content_translation');
         Schema::dropIfExists('contents');

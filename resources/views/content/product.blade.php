@@ -56,10 +56,10 @@
             </div>
             {!! $item->summary !!}
 
-            <a href="#" class="button button--aylen btn">Añadir al Carro</a>
+            <a href="{{ url('process/comprar-ahora/'.$item->slug) }}" class="button button--aylen btn">Comprar ahora</a>
 
             <div class="addwish">
-              <a href="shop-wishlist.html"><i class="fa fa-heart-o"></i> Añadir a Favoritos</a>
+              <a href="{{ url('process/add-cart-item/'.$item->id) }}"><i class="fa fa-cart-plus"></i> Añadir al Carro</a>
             </div><!-- end addw -->
             <div class="shopmeta">
               <span><strong>Categoría:</strong> <a href="{{ url('categoria/'.$item->category->slug) }}">{{ $item->category->name }}</a></span>
@@ -100,11 +100,11 @@
                                 <div class="media-body">
                                   <strong class="text-success">Jane Doe</strong>
                                   <span class="text-muted">
-                                    <small class="text-muted">6 days ago</small></span>
+                                    <small class="text-muted">6 días atras</small></span>
                                     <p>
                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, <a href="#">#some link </a>.
                                     </p>
-                                    <a href="#" class="btn btn-primary btn-sm">Reply</a>
+                                    <a href="#" class="btn btn-primary btn-sm">Responder</a>
                                   </div>
                                   <div class="clearfix"></div>
                                 </div>
@@ -115,13 +115,13 @@
                                         <img src="{{ asset('assets/upload/avatar_02.png') }}" alt="" class="img-circle">
                                       </a>
                                       <div class="media-body">
-                                        <strong class="text-success">MrAwesome</strong>
+                                        <strong class="text-success">Sergio</strong>
                                         <span class="text-muted">
-                                          <small class="text-muted">2 days ago</small></span>
+                                          <small class="text-muted">2 días atras</small></span>
                                           <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
                                           </p>
-                                          <a href="#" class="btn btn-primary btn-sm">Reply</a>
+                                          <a href="#" class="btn btn-primary btn-sm">Responder</a>
                                         </div>
                                         <div class="clearfix"></div>
                                       </div>
@@ -132,13 +132,13 @@
                                           <img src="{{ asset('assets/upload/avatar_03.png') }}" alt="" class="img-circle">
                                         </a>
                                         <div class="media-body">
-                                          <strong class="text-success">Miss Lucia</strong>
+                                          <strong class="text-success">Lucia</strong>
                                           <span class="text-muted">
-                                            <small class="text-muted">15 minutes ago</small></span>
+                                            <small class="text-muted">15 minutos atras</small></span>
                                             <p>
                                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
                                             </p>
-                                            <a href="#" class="btn btn-primary btn-sm">Reply</a>
+                                            <a href="#" class="btn btn-primary btn-sm">Responder</a>
                                           </div>
                                           <div class="clearfix"></div>
                                         </div>
@@ -187,30 +187,26 @@
 
                               <div class="contact_form blog-desc">
                                 <div class="widget-title">
-                                  <h4>Leave a Feedback</h4>
+                                  <h4>Deje un comentario</h4>
                                   <hr>
                                 </div>
 
                                 <div class="contact_form">
                                   <form class="row">
                                     <div class="col-md-4 col-sm-12">
-                                      <label>Name <span class="required">*</span></label>
+                                      <label>Nombre <span class="required">*</span></label>
                                       <input type="text" class="form-control" placeholder="">
                                     </div>
                                     <div class="col-md-4 col-sm-12">
                                       <label>Email <span class="required">*</span></label>
                                       <input type="email" class="form-control" placeholder="">
                                     </div>
-                                    <div class="col-md-4 col-sm-12">
-                                      <label>Website</label>
-                                      <input type="text" class="form-control" placeholder="">
-                                    </div>
                                     <div class="col-md-12 col-sm-12">
-                                      <label>Comment <span class="required">*</span></label>
+                                      <label>Comentario <span class="required">*</span></label>
                                       <textarea class="form-control" placeholder=""></textarea>
                                     </div>
                                     <div class="col-md-12 col-sm-12">
-                                      <input type="submit" value="Send Comment" class="btn btn-primary" />
+                                      <input type="submit" value="Enviar Comentario" class="btn btn-primary" />
                                     </div>
                                   </form>
                                 </div><!-- end commentform -->
@@ -232,26 +228,11 @@
               <div id="sidebar" class="col-md-3 col-sm-12">
                 <div class="widget clearfix">
                   <div class="about-widget">
-                    <div class="post-media">
-                      <img src="{{ asset('assets/upload/me.jpg') }}" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="social-icons">
-                      <ul class="list-inline">
-                        <li class="facebook"><a data-tooltip="tooltip" data-placement="top" title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="google"><a data-tooltip="tooltip" data-placement="top" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li class="twitter"><a data-tooltip="tooltip" data-placement="top" title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="linkedin"><a data-tooltip="tooltip" data-placement="top" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="pinterest"><a data-tooltip="tooltip" data-placement="top" title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li class="skype"><a data-tooltip="tooltip" data-placement="top" title="Skype" href="#"><i class="fa fa-skype"></i></a></li>
-                      </ul>
-                    </div><!-- end social icons -->
 
                     <div class="about-desc">
-                      <h4>John BRITTO</h4>
-                      <small>Junior Web Designer</small>
-                      <p>Welcome to my portfolio, my name is John. I create handcraft web design and graphic sources for beginners like me.</p>
-                      <img src="{{ asset('assets/upload/signature.png') }}" alt="">
+                      <h4>Bellota Scrapbooking</h4>
+                      <small>Tu tienda favorita</small>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sollicitudin lacus, at iaculis ligula convallis ultrices. Donec eget tempor lorem, a porttitor ligula. Vestibulum erat libero, hendrerit eu nibh a, auctor aliquet quam.</p>
                     </div>
                   </div>
                   <!-- end about-widget -->
@@ -260,7 +241,7 @@
 
                 <div class="widget clearfix">
                   <div class="widget-title">
-                    <h4>Be Social</h4>
+                    <h4>Nuestras Redes Sociales</h4>
                     <hr>
                   </div>
                   <div class="menu-widget">
@@ -273,25 +254,6 @@
                     </ul>
                   </div>
                   <!-- end menu-widget -->
-                </div>
-                <!-- end widget -->
-
-                <div class="widget clearfix">
-                  <div class="widget-title">
-                    <h4>Tags</h4>
-                    <hr>
-                  </div>
-                  <div class="tags">
-                    <a href="#">design</a>
-                    <a href="#">art</a>
-                    <a href="#">photo</a>
-                    <a href="#">student</a>
-                    <a href="#">material</a>
-                    <a href="#">app</a>
-                    <a href="#">yellow</a>
-                    <a href="#">light</a>
-                  </div>
-                  <!-- end tags-widget -->
                 </div>
                 <!-- end widget -->
               </div><!-- end sidebar -->

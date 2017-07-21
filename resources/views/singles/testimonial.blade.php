@@ -1,6 +1,6 @@
 <div class="testi-item">
     <img src="{{ asset('assets/images/client.jpg') }}" alt="" class="img-circle">
-    <h4>Jenny</h4>
-    <small>Envato.com</small>
-    <p class="lead">It was popularised in the with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop ...</p>
+    <h4>Carla Revollo</h4>
+    <small>Empresa de Muestra</small>
+    <p class="lead">Bellota es nuestra tienda favorita desde hace mucho tiempo y siempre nos provee de productos innovadores y de calidad para nuestra empresa.</p>
 </div><!-- end item -->

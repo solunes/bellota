@@ -14,7 +14,7 @@
 <div class="page-title">
   <div class="container clearfix">
     <div class="title-area pull-left">
-      <h2>{{ $page->name }} <small>Beautiful Home Decoration Materials!</small></h2>
+      <h2>{{ $page->name }} <small>Bellota Scrapbooking Store!</small></h2>
     </div><!-- /.pull-right -->
     <div class="pull-right hidden-xs">
       <div class="bread">

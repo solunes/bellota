@@ -11,10 +11,8 @@ class TruncateSeeder extends Seeder {
     public function run()
     {
         \App\ContactForm::truncate();
-        \App\DeliveryTime::truncate();
-        \App\Ad::truncate();
-        \App\Newsletter::truncate();
-        \App\Subbanner::truncate();
+        \App\Contact::truncate();
+        \App\Blog::truncate();
         \App\Banner::truncate();
         \App\ContentTranslation::truncate();
         \App\Content::truncate();

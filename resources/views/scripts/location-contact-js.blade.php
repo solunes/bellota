@@ -7,7 +7,7 @@
         var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
         var mapOptions = {
           center: new google.maps.LatLng(-16.51409139, -68.12485814),
-          zoom: 13,
+          zoom: 12,
           minZoom: 5,
           maxZoom: 17,
           scrollwheel: false,
@@ -19,7 +19,7 @@
             style: google.maps.ZoomControlStyle.SMALL
           }
         };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
+        var map = new google.maps.Map(document.getElementById("map"),
             mapOptions);
 
         var locations = [

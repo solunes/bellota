@@ -12,10 +12,12 @@ class CustomFunc {
             case 'home':
                 $subarray['content'] = \App\Content::getCode('home')->content;
                 $subarray['banners'] = \App\Banner::get();
-                $subarray['products'] = \Solunes\Store\App\Product::get()->random(4);
+                $subarray['blogs'] = \App\Blog::limit(3)->get();
+                $subarray['categories'] = \Solunes\Store\App\Category::limit(8)->get();
+                $subarray['products'] = \Solunes\Store\App\Product::limit(4)->get();
             break;
             case 'store':
-                $subarray['products'] = \Solunes\Store\App\Product::get()->random(8);
+                $subarray['products'] = \Solunes\Store\App\Product::limit(12)->get();
             break;
         }
         $array['nodes'] = $subarray;
@@ -27,11 +29,11 @@ class CustomFunc {
         $array_node_names = [];
         $array_nodes = [];
         switch ($page->customized_name) {
-            case 'blog': $array_nodes = ['offers'=>'content'];                   
+            case 'blog': $array_nodes = ['blog'];                   
             break;
             case 'about': $array_nodes = ['about'=>'content'];          
             break;
-            case 'contact': $array_nodes = ['contact'=>'content', 'contact-form'];                   
+            case 'contact': $array_nodes = ['contact'];                   
             break;
         }
         $subarray = [];

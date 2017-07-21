@@ -1,4 +1,4 @@
-<div class="container fr-view">
+<div class="fr-view">
     @if(count($items)>0)
         @foreach($items as $key => $item)
         	{!! $item->content !!}
