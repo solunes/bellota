@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-<section class="section paralbackground page-banner hidden-xs" style="background-image:url('{{ asset('assets/upload/page_banner_about.jpg') }}');" data-img-width="2000" data-img-height="400" data-diff="100">
+<section class="section paralbackground page-banner hidden-xs" style="background-image:url('{{ asset('assets/images/header.jpg') }}');" data-img-width="2000" data-img-height="400" data-diff="100">
 </section>
 @endsection
 
@@ -48,6 +48,7 @@
             <div class="about-desc">
               <h4>Bellota Scrapbooking</h4>
               <small>Tu tienda favorita</small>
+              <img src="{{ asset('assets/images/sidebar.jpg') }}" alt="" class="img-responsive">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultricies sollicitudin lacus, at iaculis ligula convallis ultrices. Donec eget tempor lorem, a porttitor ligula. Vestibulum erat libero, hendrerit eu nibh a, auctor aliquet quam.</p>
             </div>
           </div>

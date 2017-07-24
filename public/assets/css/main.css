@@ -120,12 +120,16 @@ body.boxed {
 	background: #fff !important;
 }*/
 body.main-site {
+  /*store*/
+  /*product-single*/
   /*@import "master/main";
   @import "master/responsive";
   @import "segments/main";
   @import "segments/responsive";
   @import "project/main";
   @import "project/responsive";*/ }
+  body.main-site #message {
+    display: block; }
   body.main-site #wrapper .header {
     background-color: #cc1b54; }
   body.main-site .navbar-inverse .navbar-nav li:focus, body.main-site .navbar-inverse .navbar-nav > .open > a, body.main-site .navbar-inverse .navbar-nav > .open > a:hover, body.main-site .navbar-inverse .navbar-nav > .open > a:focus, body.main-site .navbar-inverse .navbar-nav li:hover, body.main-site .navbar-inverse .navbar-nav > .active > a, body.main-site .navbar-inverse .navbar-nav > .active > a:hover, body.main-site .navbar-inverse .navbar-nav > .active > a:focus {
@@ -152,3 +156,21 @@ body.main-site {
     background-color: #b9d5bf; }
   body.main-site small, body.main-site .post-date, body.main-site .box i, body.main-site .section-title i, body.main-site .accordion-toggle-2 .panel-heading a i, body.main-site .notfound a, body.main-site a:hover, body.main-site a:focus, body.main-site .footer li:hover a, body.main-site .topfooter li:hover a, body.main-site .topfooter .payments i:hover {
     color: #b9d5bf; }
+  body.main-site .title-area h2 small {
+    color: #cc1b54; }
+  body.main-site .btn-primary {
+    background-color: #cc1b54;
+    border-color: #cc1b54; }
+  body.main-site #vertical .navbar-default .navbar-nav > li:hover, body.main-site #vertical .navbar-default .navbar-nav > li:focus, body.main-site .btn-primary .badge, body.main-site .btn-primary.disabled:hover, body.main-site .btn-primary[disabled]:hover, body.main-site fieldset[disabled] .btn-primary:hover, body.main-site .btn-primary.disabled:focus, body.main-site .btn-primary[disabled]:focus, body.main-site fieldset[disabled] .btn-primary:focus, body.main-site .btn-primary.disabled.focus, body.main-site .btn-primary[disabled].focus, body.main-site fieldset[disabled] .btn-primary.focus, body.main-site .btn-primary:active, body.main-site .btn-primary.active, body.main-site .open > .dropdown-toggle.btn-primary, body.main-site .btn-primary:active:hover, body.main-site .btn-primary.active:hover, body.main-site .open > .dropdown-toggle.btn-primary:hover, body.main-site .btn-primary:active:focus, body.main-site .btn-primary.active:focus, body.main-site .open > .dropdown-toggle.btn-primary:focus, body.main-site .btn-primary:active.focus, body.main-site .btn-primary.active.focus, body.main-site .open > .dropdown-toggle.btn-primary.focus, body.main-site .btn-primary:active, body.main-site .btn-primary.active, body.main-site .open > .dropdown-toggle.btn-primary, body.main-site .btn-primary:hover {
+    background-color: #84072f;
+    border-color: #84072f; }
+  body.main-site #sidebar .widget {
+    background: #cc1b54; }
+    body.main-site #sidebar .widget a, body.main-site #sidebar .widget h4, body.main-site #sidebar .widget p {
+      color: #fff; }
+    body.main-site #sidebar .widget p {
+      text-align: left; }
+    body.main-site #sidebar .widget a:hover {
+      color: #b9d5bf; }
+  body.main-site .tab-style-1 .nav-tabs > li.active > a {
+    border-top-color: #b9d5bf; }

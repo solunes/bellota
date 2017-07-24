@@ -71,6 +71,37 @@ body.main-site {
 	small, .post-date, .box i, .section-title i, .accordion-toggle-2 .panel-heading a i, .notfound a, a:hover, a:focus, .footer li:hover a, .topfooter li:hover a, .topfooter .payments i:hover {
 		color: $second-color;
 	}
+
+	/*store*/
+
+	.title-area h2 small {
+		color: $primary-color;
+	}
+	.btn-primary {
+		background-color: $primary-color;
+		border-color:$primary-color;		
+	}
+	#vertical .navbar-default .navbar-nav > li:hover, #vertical .navbar-default .navbar-nav > li:focus, .btn-primary .badge, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .btn-primary:hover {
+		background-color: #84072f;
+		border-color: #84072f;
+	}
+	#sidebar .widget {
+		background: $primary-color;
+		a, h4, p {
+			color: #fff;
+		}
+		p {
+			text-align: left;
+		}
+		a:hover {
+			color: $second-color;
+		}
+	}
+
+	/*product-single*/
+	.tab-style-1 .nav-tabs > li.active > a {
+		border-top-color: $second-color;
+	}
 	/*@import "master/main";
 	@import "master/responsive";
 	@import "segments/main";
